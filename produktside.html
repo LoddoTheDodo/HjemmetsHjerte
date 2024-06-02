@@ -5,22 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hjemmets Hjerte</title>
     <link rel="stylesheet" href="css.css">
+    <link rel="icon" type="image/png" href="img/tab%20logo.png">
+    <META NAME="robots" CONTENT="noindex,nofollow">
 </head>
 <body>
 <nav>
-    <a href="forside.html">
-        <img src="img/logo.png" alt="logo" class="logo">
-    </a>
-    <div style="" class="nav-p">
-        <a href="catalog.html">Indendørs</a>
-        <a href="catalog.html">Udendørs</a>
-        <a href="catalog.html">Alle Møbler</a>
-    </div>
+    <div class="logo"><a href="index.html"><img src="img/logo-removebg-preview.png" alt="logo" class="logo"></a></div>
+    <ul class="nav-menu">
+        <li class="nav-item"><a href="catalog.html" class="nav-link">Indendørs</a></li>
+        <li class="nav-item"><a href="catalog.html" class="nav-link">Udendørs</a></li>
+        <li class="nav-item"><a href="catalog.html" class="nav-link">Alle Møbler</a></li>
+        <li class="nav-item"><a href="kurv.html" class="nav-link">Kurv</a></li>
+    </ul>
 </nav>
 
+<section class="main-wrap">
+    <div class="product">
+        <div class="image-gallery">
+            <img class="img-product" src="img/1%20-%20Copy.jpg" id="productImg">
+            <div class="controls">
+                <span class="btn active"> </span>
+                <span class="btn"> </span>
+                <span class="btn"> </span>
+            </div>
+        </div>
+        <div class="product-details">
+            <div class="details">
+                <h2>Dark wood chair</h2>
+                <h3 class="line">1000 dkk</h3>
+                <h2>650 dkk</h2>
+                <h4>35% mindre</h4>
+                <div id="quantity">
+                    <form class="quantity">
+                        <div class="select-quantity">
+                            <h3>Antal: </h3>
+                            <input type="number" name="number" value="1" id="input">
+                        </div>
+                        <div class="sub-btn">
+                            <button href="" type="submit" class="submit">Læg i kurv</button>
+                        </div>
+                    </form>
+                </div>
 
+                <script>
+                    const form = document.querySelector('.quantity');
+                    const quantity = document.getElementById('input');
 
+                    form.addEventListener('submit', function(e) {
+                        e.preventDefault();
 
+                        const quantityValue = quantity.value;
+
+                        localStorage.setItem('WoodChair1', quantityValue);
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/product.js"></script>
 
 <article class="container">
     <h2 class="center">Om produktet</h2>

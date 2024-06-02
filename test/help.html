@@ -19,13 +19,12 @@
     </ul>
 </nav>
 
-<div class="container-kurv">
-    <h1>Kurv</h1>
-    <div class="product-section">
-        <div class="product-card">
+<section class="kurv-wrap">
+    <div class="product">
+        <div class="item-list">
             <div class="header">
                 <div class="title">KONTOR - <strong>LÆDER STOL</strong></div>
-                <div class="price" data-unit-price="650">650 DKK</div>
+                <div class="price" data-unit-price="1600">1.600 DKK</div>
             </div>
             <div class="body">
                 <img class="product-img" src="img/1.jpg" alt="Product Image">
@@ -39,17 +38,33 @@
                 <button class="plus">+</button>
             </div>
         </div>
-        <div class="summary-card">
-            <p><strong>Orderbeløb</strong> <span class="summary-price">1.600 DKK</span></p>
-            <p>Subtotal <span class="summary-subtotal">1.600 DKK</span></p>
-            <p><strong>I alt (ink. moms)</strong> <span class="summary-total">1.600 DKK</span></p>
-            <p>Subtotal <span class="summary-subtotal">1.600 DKK</span></p>
-            <button class="checkout">Gå til kassen</button>
+        <div class="product-details">
+            <div class="details">
+                <h2>Orderbeløb</h2>
+                <h3>Subtotal</h3>
+                <h4>I alt (inc. moms)</h4>
+                <div id="quantity">
+                    <div class="sub-btn">
+                        <button href="" type="submit" class="submit">Betal</button>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+</section>
+
+<script src="js/kurv.js"></script>
+
+
+<div class="kurv">
+    <div class="itemList">
+
+    </div>
+    <div class="totalPris">
+
     </div>
 </div>
 
-<script src="js/kurv.js"></script>
 
 <footer class="footer-colour">
     <h2 class="center">Kontakt os</h2>
@@ -61,5 +76,7 @@
     <img class="footer-trust" src="img/trust_pilotEXAMPLE.png">
     <img class="footer-SoMe" src="img/Social-Media.png">
 </footer>
+
+<script src="js/cart.js"></script>
 </body>
 </html>
